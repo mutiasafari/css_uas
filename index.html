@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explore Bogor | Beranda</title>
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script src="jquery-1.12.3.js"></script>
+
+	<style type="text/css">
+
+		 @font-face {
+			font-family: "Open Sans Condensed";
+			src: url('fonts/OpenSans-Regular.ttf');
+		 }
+		body{
+			font-family: arial;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f6;
+		}
+
+		header{
+			width: 100%;
+			height: 100%;
+			background-color: #ffffff;
+			overflow: hidden;
+		}
+
+		#selamat_datang{
+			text-align: center;
+			border-bottom: 4px solid black;
+			font-family: Letter Gothic Std;
+		}
+
+		#selamat_datang h1 i{
+			font-weight: bolder;
+		}
+
+		#menu {
+			width: 80%;
+			margin: auto;
+			overflow: hidden;
+		}
+
+		#logo {
+			float: left;
+			width: 25%;
+		}
+
+		#menu nav ul{
+			float: right;
+			padding: auto;
+			margin: auto;
+		}
+
+		#menu nav ul li{
+			float: left;
+			margin: 10px;
+			padding: 30px;
+			display: block;
+			font-weight: bold;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		a:hover {
+			color: silver;
+		}
+
+		#banner {
+			margin: 0;
+			background: url('img/landscape.png') no-repeat center center;
+			background-size: 100% 100%;
+			height: 320px;
+			width: 100%;
+			margin: auto;
+		}
+
+		#banner h1{
+			text-align: center;
+			font-size: 45px;
+			color: #1C2A39;
+
+		}
+
+
+		#banner p{
+			text-align: center;
+			font-weight: lighter;
+			font-size: 20;
+			
+
+		}
+		#isi {
+			width: 85%;
+			overflow: hidden;
+			margin: auto;
+			padding: 30px;
+			padding-top: 70px;
+			background-color: #f5f5f6;
+			font-family: Open Sans Condensed;
+		}
+		
+		#isinya {
+			width: 50%;
+			margin: auto;
+			overflow: hidden;
+		}
+		.content{
+			width: 20%;
+			float: left;
+			padding: 30px;
+			margin: 30px;
+			text-align: center;
+		}
+
+		.ikon {
+			font-size: 120px;
+			color: #f28534;
+			border: 3px solid #f28534;
+			border-radius: 100%;
+			width: 150px;
+			height: 150px;
+			margin: auto;
+			padding: 20px;
+		}
+
+		#saran{
+			width: 100%;
+			height: 500px;
+			background-color: #65adeb;	
+		}
+
+		#isi-saran{
+			width: 80%;
+			height: auto;
+			overflow: hidden;
+			margin: auto;
+			padding-top: 20px;
+			font-family: Open Sans Condensed;
+		}
+		
+		h2 {
+			font-size: 30pt;
+			text-align: center;
+			padding-top: 50px;
+		}
+		
+		#kiri {
+			float: left;
+			width: 30%;
+			padding: 50px 0 50px 100px;		
+		}
+
+		#kiri p {
+			font-size: 14pt;
+			padding-left: 10px;
+		}
+
+		#kiri table tr td img {
+			width: 50px;
+			padding: 5px;
+		}
+
+		#kiri table tr td i {
+			font-size: 50px;
+			padding: 5px;
+		}
+
+			#kiri table tr td img:hover {
+				width: 60px;
+				box-shadow: 1;
+			}
+
+			#kanan {
+				display: inline;
+				float: right;
+				width: 50%;
+			}
+
+			#kanan input {
+				width: 30%;
+				border: 0;
+				height: 30px;
+				padding: 5px;
+				margin-top: 10px;
+			}
+
+			#kanan textarea {
+				width: 63%;
+				border: 0;
+				padding: 5px;
+				margin-top: 10px;
+			}
+			#kanan .button {
+				width: 65%;
+				background: black;
+				color: white;
+				margin-top: 10px;	
+				font-weight: bold;
+				cursor: pointer;
+			}
+
+			#kanan .button:hover {
+				background: white;
+				color: black;
+				border: black solid 2px;
+				margin-top: 10px;	
+				font-weight: bold;
+				cursor: pointer;
+			}
+
+			footer {
+				height: auto;
+				overflow: hidden;
+				background: #1C2A39;
+				color: white;
+				text-align: center;
+
+			}
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<header>
+		<div id="selamat_datang" > <h1 style="margin-bottom:0;">BOGOR ~ <i>Buitenzorg</i> </h1><br>
+		<p id="tanggal" style="margin-top:0;"></p></div>
+
+		<script>
+			var d = new Date();
+			document.getElementById("tanggal").innerHTML = d.toDateString();
+		</script>
+
+		<div id="menu">
+			<div id="logo"><img src="img/logo.png"></div>
+			<nav>
+				<ul>
+					<li><a href="index.html">BERANDA</a></li>
+					<li><a href="wisata/wisata.html">WISATA</a></li>
+					<li><a href="kuliner/kuliner.html">KULINER</a></li>
+					<li><a href="resort/resort.html">RESORT</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="banner">
+				<h1>Let's Explore <span class="text-slide" style="color:#bdda75;"> Nature <i class="fa fa-tree"></i></span>
+				<div class="text-slide" style="color:#ef6c53;"> Food <i class="fa fa-coffee"></i></div>
+				<div class="text-slide" style="color:#65adeb;"> Resort & Hotel <i class="fa fa-home"></i></div>
+				<div class="text-slide" style="color:#f28534;"> Bogor <i class="fa fa-map-marker"></i></div>
+				</h1>	
+				<p><i>"To get to know a country, You must have to direct contact with the EARTH. It's futile to gaze at
+				the world trough a car window."</i><br>
+				<b>- ALBERT EINSTEIN -</b></p>	
+		</div>
+
+		 <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("text-slide");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "inline";  
+            setTimeout(carousel, 3000); 
+        }
+        </script>
+	</header>
+
+	<div id="isi">
+		<h2 style="color: #f28534;">Ada apa aja sih di Bogor?</h2>
+
+		<p style="padding: 10px; font-size: 20px; text-align:justify; text-indent: 100px;">Banyak banget! <i>Yuhuuu</i>...
+		Dengan letaknya yang dekat dengan kota Jakarta dengan koordinat antara 6.19<sup>o</sup> - 6.47<SUP>o</SUP> 
+		lintang selatan dan 106<sup>o</sup> 1'-107<sup>o</sup> 103' bujur timur. Dan yang penting, tempat-tempat wisata 
+		di Bogor tuh Instagram-<i>able</i> banget lho. Untuk referensi kamu yang mau jalan-jalan ke Bogor, yuk! cek blog ini.</p>
+
+		<div class="isinya">
+			<div class="content">
+				<div class="ikon"><i class="fa fa-tree"></i></div>
+				<p>Mau wisata alam? Tinggal pilih, ada curug, ada gunung juga.. Baaanyak pilihannya deh!</p>
+			</div>				
+			<div class="content">
+				<div class="ikon"><i class="fa fa-coffee" style="font-size:120px"></i></div>
+				<p>Kuliner Bogor juga oke punya.</p>
+			</div>
+
+			<div class="content">
+				<div class="ikon"><i class="fa fa-home" style="font-size:120px"></i></div>
+				<p>Mau lama-lama di Bogor juga bisa. Mau penginapan yang unik? Di Bogor ada!</p>
+			</div>
+						
+		</div>
+	</div><!--div isi-->
+
+	<div id="saran">
+	<h2>Kontak Kami</h2>
+	<p style="text-align:center; font-size:12pt;">Biar lebih up-to-date dan kekinian, silahkan follow media sosial kami. <br>
+	Punya rekomendasi ataupun saran? Silahkan isi form  dibawah ini</p>
+	<div id="isi-saran">
+	<div id="kiri">
+		 <table>
+		 	<tr>
+		 		<td><a href="https://www.facebook.com/explorebogor" target="_blank"><i class="fa fa-facebook-square" title="Facebook"></i></a></td>
+		 		<td><a href="https://twitter.com/explorebogor" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a></td>
+		 		<td><a href="https://www.instagram.com/explorebogor" target="_blank"><i class="fa fa-instagram" title="Instagram"></i></a></td>
+		 		<td><a href="#!"><i class="fa fa-whatsapp" title="WhatsApp" onClick="alert('WhatsApp 087880260774')"></i></a></td>
+		 		<td><a href="mailto:explorebogor@gmail.com"><i class="fa fa-google-plus-square" title="Email"></i></a></td>
+		 		<td><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest-square" title="Pinterest"></i></a></td>
+		 	</tr>
+		 </table>
+	</div><!--block kiri-->
+	<div id="kanan">
+			<form name="myform" method="post" action="#!" onsubmit="return submit()">
+				<input type="text" name="nama" placeholder="Nama Kamu" required>
+				<input type="email" name="email" placeholder="Email Kamu"required> 
+				<textarea name="komentar" rows="5" placeholder="Tinggalkan Komentar disini!"></textarea><br>
+ 				<input type="Submit" value="Submit" class="button">
+
+				<p id="tampil" align="center"></p>
+			</form>
+	</div><!--block kanan-->
+	</div><!--isi-saran -->
+	</div><!--saran -->
+	<footer>
+		<p>CopyRight &copy; Explore Bogor Developer</p>
+	</footer>
+
+</body>
+</html>
